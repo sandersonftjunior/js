@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paises</title>
+</head>
+<body>
+    País onde nasceu <input type="text" name="txt" id="txt">
+    <input type="button" value="enviar" onclick="analisar()">
+    <div id="res">
+        Resposta
+    </div>
+    <script>
+        function analisar(){
+            var pais = window.document.getElementById('txt').value;
+            var res = window.document.getElementById('res')
+
+            if (pais == 'Brasil' || 'brasil'){
+                res.innerHTML = 'Você é brasileiro'
+            }else{
+                res.innerHTML = 'Você é gringo'
+            }
+        }
+    </script>
+</body>
+</html>
