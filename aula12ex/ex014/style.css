@@ -16,6 +16,10 @@ section{
     margin: auto;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.445);
 }
+div{
+    text-align: center;
+    padding: 8px;
+}
 img{
     border-radius: 50%;
     width: 250px;
