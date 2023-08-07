@@ -21,3 +21,6 @@ footer{
     text-align: center;
     font-style: italic;
 }
+label{
+    line-height: 30px;
+}
