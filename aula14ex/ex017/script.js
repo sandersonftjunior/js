@@ -1,16 +1,18 @@
-function tabuada(){
-    var n = document.getElementById('num')
-    var t = document.getElementById('tabuada')
-    if(num.value.length == 0){
-        alert('Inválido, digite um número')
-    }else{
-    var n = Number(num.value)
-    tabuada.innerHTMl = ''
+function tabuada() {
+    let num = document.getElementById('txtnum')
+    let tab = document.getElementById('seltab')
 
-    for(var c = 1; c <= 10; c++){
-        var item = document.createElement
-        item.text = `${n} x ${c} = ${n * c}`
-        tabuada.appendChild('item');
-    }
+    if (num.value.length == 0){
+        window.alert('Digite um número')
+    }else {
+        let n = Number(num.value)
+        let c = ''
+        tab.innerHTML = ''
+        for(c; c<=10;c++){
+            let item = document.createElement('option')
+            item.text = `${n} X ${c} = ${n*c}`
+            item.value = `tab${c}`
+            tab.appendChild(item)
+        }
     }
 }
